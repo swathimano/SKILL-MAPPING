@@ -1,0 +1,133 @@
+<html>
+<head>
+<title> SignUp Form</title>
+</head>
+<style>
+body
+{
+font-family: 'Sofia';font-size: 15px;
+}
+.container
+{
+  position: absolute;
+  right:450px;
+  margin: 20px;
+  max-width: 300px;
+  padding: 16px;
+  background-color: white;
+}
+input[type=text], input[type=password] 
+{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus 
+{
+  background-color: #ddd;
+  outline: none;
+}
+
+input[type=date], input[type=date] 
+{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+select[type=text], select[type=city] 
+{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+.btn:hover {
+  opacity: 1;
+}
+body
+{
+margin:0;
+padding:0;
+}
+body:before
+{
+content:'';
+position:fixed;
+width:2000px; 
+height:1000px;
+background-image:url(sw.jpg);
+background-position:center center;
+background-repeat:no-repeat;
+background-attachment:fixed;
+-webkit-background-size:cover;
+background-size:cover;
+}
+</style>
+<body>
+<div class="main">
+
+<form method="post" class="container">
+<h1>REGISTER UP</h1>
+<label for="username"><b>User name</b></label>
+<input type="text" placeholder="Enter your name" name="username" required>
+
+<label for="email"><b>Email</b></label>
+<input type="text" placeholder="Enter Email" name="email" required>
+
+<label for="psw"><b>Password</b></label>
+<input type="password" placeholder="Enter Password" name="psw" required>
+
+<label for="confirm psw"><b>Confirm</b></label>
+<input type="password" placeholder="confirm password" name="confirm psw" required>
+
+<label for="dob"><b>Date of birth</b></label>
+<input type="date"  name="dob" required><br/>
+
+
+<label for="city"><b>city</b></label>
+<select type="text"  name="city" required>
+  <option value=""></option>
+  <option value="madurai">madurai</option>
+  <option value="chennai">chennai</option>
+  <option value="coimbatore">coimbatore</option>
+  <option value="bangalore">bangalore</option>
+</select>
+<br/>
+
+<label for="male"><b>Male</b></label>
+<input type="radio" name="gender" id="male" value="male">
+<label for="female"><b>Female</b></label>
+<input type="radio" name="gender" id="female" value="female">
+<label for="other"><b>Other</b></label>
+<input type="radio" name="gender" id="other" value="other"><br><br/>
+
+<label class="anim">
+<input type="checkbox" class="checkbox" required="">
+<span>I Agree To The Terms & Conditions</span>
+</label><br/><br/>
+
+<button type="submit" class="btn">Sign up</button><br/><br/>
+
+<p> Have an Account? <a href="index.html"> Login Now!</a></p>
+</div>
+
+</form>
+</body>
+</html>

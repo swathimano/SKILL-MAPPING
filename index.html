@@ -1,0 +1,81 @@
+<html>
+<head>
+<title> SignUp Form</title>
+</head>
+<style>
+body
+{
+font-family: 'Sofia';font-size: 15px;
+}
+.container
+{
+  position: absolute;
+  right:350px;
+  margin:100px;
+  max-width: 300px;
+  padding: 16px;
+  background-color: white;
+}
+input[type=text], input[type=password] 
+{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus 
+{
+  background-color: #ddd;
+  outline: none;
+}
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+.btn:hover {
+  opacity: 1;
+}
+
+body
+{
+margin:0;
+padding:0;
+}
+body:before
+{
+content:'';
+position:fixed;
+width:2000px; 
+height:1000px;
+background-image:url(sw.jpg);
+background-position:center center;
+background-repeat:no-repeat;
+background-attachment:fixed;
+-webkit-background-size:cover;
+background-size:cover;
+}
+</style>
+<body>
+<div class="main">
+<form method="post" action="LoginServletr" class="container">
+<h1>LOGIN</h1>
+<label for="username"><b>User name</b></label>
+<input type="text" placeholder="Enter your name" name="name" required>
+<label for="psw"><b>Password</b></label>
+<input type="password" placeholder="Enter Password" name="password" required>
+<input type="submit" class="btn" value="Login">
+
+<p>Don't have an Account? <a href="reggi.html"> Register here!</a></p>
+</div>
+
+</form>
+</body>
+</html>
+
